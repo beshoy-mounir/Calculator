@@ -82,6 +82,7 @@ main .calculator-wrapper .calculator-container .calculator input {
 
 main .calculator-wrapper .calculator-container .calculator .opr {
     background-color: var(--orange);
+    font-size: 20px;
 }
 
 main .calculator-wrapper .calculator-container .calculator :nth-child(4) {
