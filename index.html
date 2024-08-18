@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Calculator</title>
+        <!-- icon -->
+        <link rel="icon" href="assets/media/calculator.ico" />
+        <!-- Style -->
+        <link rel="stylesheet" href="assets/style/main.css" />
+    </head>
+    <body>
+        <main>
+            <section class="calculator-wrapper">
+                <section class="calculator-container">
+                    <div class="disply">
+                        <input
+                            type="text"
+                            readonly
+                            id="disply"
+                            onclick="del()" />
+                    </div>
+                    <div class="calculator">
+                        <input
+                            class="opr"
+                            type="button"
+                            value="AC"
+                            onclick="clearAll()" />
+                        <input
+                            class="opr"
+                            type="button"
+                            value="+/-"
+                            onclick="opSign()" />
+                        <input
+                            class="opr"
+                            type="button"
+                            value="%"
+                            onclick="percentage()" />
+                        <input
+                            class="opr"
+                            type="button"
+                            value="÷"
+                            onclick="dev()"
+                            class="opr" />
+                        <input type="button" value="1" onclick="addnum(1)" />
+                        <input type="button" value="2" onclick="addnum(2)" />
+                        <input type="button" value="3" onclick="addnum(3)" />
+                        <input
+                            class="opr"
+                            type="button"
+                            value="+"
+                            onclick="plus()" />
+                        <input type="button" value="4" onclick="addnum(4)" />
+                        <input type="button" value="5" onclick="addnum(5)" />
+                        <input type="button" value="6" onclick="addnum(6)" />
+                        <input
+                            class="opr"
+                            type="button"
+                            value="--"
+                            onclick="sub()" />
+                        <input type="button" value="7" onclick="addnum(7)" />
+                        <input type="button" value="8" onclick="addnum(8)" />
+                        <input type="button" value="9" onclick="addnum(9)" />
+                        <input
+                            class="opr"
+                            type="button"
+                            value="x"
+                            onclick="mult()" />
+                        <input type="button" value="0" onclick="addnum(0)" />
+                        <input type="button" value="." onclick="dot()" />
+                        <input
+                            class="opr"
+                            type="submit"
+                            class="red"
+                            value="="
+                            onclick="equal()" />
+                    </div>
+                </section>
+            </section>
+        </main>
+        <script src="index.js"></script>
+    </body>
+</html>

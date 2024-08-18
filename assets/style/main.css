@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --lightgrey: #636363;
+    --orange: #ff9f0a;
+    --grey: #333333;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #d4d4d2;
+}
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .calculator-wrapper {
+    width: 20%;
+    height: 500px;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: black;
+}
+
+main .calculator-wrapper .calculator-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+
+main .calculator-wrapper .calculator-container .disply {
+    width: 85%;
+    height: 6rem;
+}
+main .calculator-wrapper .calculator-container .disply input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 50px;
+    background-color: black;
+    color: white;
+}
+main .calculator-wrapper .calculator-container .disply input:focus {
+    outline: none;
+}
+main .calculator-wrapper .calculator-container .calculator {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+    gap: 10px;
+}
+main .calculator-wrapper .calculator-container input:hover,
+.disply:hover {
+    cursor: pointer;
+}
+main .calculator-wrapper .calculator-container .calculator input {
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+    color: white;
+    background-color: var(--grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .calculator-wrapper .calculator-container .calculator input {
+    border: none;
+}
+
+main .calculator-wrapper .calculator-container .calculator .opr {
+    background-color: var(--orange);
+}
+
+main .calculator-wrapper .calculator-container .calculator :nth-child(4) {
+    font-size: 24px;
+}
+main .calculator-wrapper .calculator-container .calculator :nth-child(17) {
+    width: 100%;
+    grid-column: 1/3;
+    border-radius: 50px;
+}
+
+/* Media Querys */
+
+@media (min-width: 1281px) {
+    main .calculator-wrapper {
+        width: 25%;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    main .calculator-wrapper {
+        width: 30%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    main .calculator-wrapper {
+        width: 40%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    main .calculator-wrapper {
+        width: 60%;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    main .calculator-wrapper {
+        width: 75%;
+    }
+}
